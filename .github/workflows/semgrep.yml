@@ -14,7 +14,7 @@ permissions:
 jobs:
   semgrep:
     name: semgrep-oss
-    runs-on: ubuntu-slim
+    runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v5
         with:

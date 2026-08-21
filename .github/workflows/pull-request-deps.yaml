@@ -9,7 +9,7 @@ on:
 jobs:
   autofix-deps:
     if: github.event.pull_request.user.login == 'dependabot[bot]'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     timeout-minutes: 10
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-autofix-deps

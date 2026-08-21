@@ -7,7 +7,7 @@ on:
 jobs:
   check-and-deploy-main:
     name: Check and Deploy
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     timeout-minutes: 20
     concurrency: templates-check-and-deploy-main
     env:
